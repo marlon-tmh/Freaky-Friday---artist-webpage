@@ -1,0 +1,266 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+#flex-container {
+    display: flex;
+    flex-flow: column;
+}
+
+@media (min-width: 1080px) {
+    #header-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: whitesmoke;
+        text-align: center;
+        border-bottom: 2px solid #990000;
+    }
+    #header-wrapper > #logo-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-basis: 50%;
+        margin-left: 10px;
+    }
+    #header-wrapper > #logo-wrapper > a:link {
+        color: #990000;
+        text-decoration: none;
+    }
+    #header-wrapper > #logo-wrapper > a:visited {
+        color: #990000;
+    }
+    #header-wrapper > #navigation-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 50%;
+        margin-right: 10px;
+        text-align: center;
+    }
+    #header-wrapper > #navigation-wrapper > a:link {
+        text-decoration: none;
+        color: #990000;
+        flex-basis: 150px;
+        font-size: 15pt;
+    }
+    #header-wrapper > #navigation-wrapper > a:visited {
+        color: #990000;
+    }
+    #header-wrapper > #navigation-wrapper > a:hover {
+        background-color: lightgray;
+    }
+    #header-wrapper > #navigation-wrapper > a:active {
+        color: whitesmoke;
+        background-color: #990000;
+    }
+
+    #content {
+        width: 60%;
+        min-height: 573px;
+        margin: auto;
+    }
+    .contentbox {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 5px 20px 5px 20px;
+        margin: 30px 0px 30px 0px;
+        border-left: 2px solid #990000;
+        border-right: 2px solid #990000;
+    }
+    #content > .contentbox > h2 {
+        width: 100%;
+        border-bottom: 2px solid #990000;
+        padding-bottom: 5px;
+    }
+    #content > .contentbox > p > img {
+        float: right;
+        margin: 0px 5px 0px 10px;
+    }
+    #content > .contentbox > p {
+        width: 100%;
+    }
+
+    #content > .contentbox > .ticketbutton {
+            margin-top: 5px;
+        }
+    #content > .contentbox > .ticketbutton a:link {
+        text-decoration: none;
+        color: #222222;
+        border: 2px solid #990000;
+        border-radius: 10px;
+        width: 20px;
+        padding: 10px 25px 10px 25px;
+    }
+    #content > .contentbox > .ticketbutton a:visited {
+        border: 2px solid #222222;
+        color: #222222;
+    }
+    #content > .contentbox > .ticketbutton a:hover {
+        background-color: lightgray;
+    }
+    #content > .contentbox > .ticketbutton a:active {
+        background-color: #222222;
+        color: whitesmoke;
+    }
+    
+
+    b {
+        color: #990000;
+    }
+    h1 {
+        text-align: center;
+    }
+
+    #footer {
+        border-top: 2px solid #990000;
+        border-bottom: 2px solid #990000;
+        padding: 20px 0px;
+    }
+    #footer > a:link {
+        text-decoration: none;
+        color: #990000;
+    }
+    #footer > a:visited {
+        color: #990000;
+    }
+    #footer > a:hover {
+        color: #ee0000;
+    }
+    #footer > a:active {
+        color: #222222;
+    }
+}
+
+
+@media (max-width: 1080px) {
+    #header-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: whitesmoke;
+        text-align: center;
+        border-bottom: 2px solid #990000;
+    }
+    #header-wrapper > #logo-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-basis: 100%;
+        margin-left: 10px;
+    }
+    #header-wrapper > #logo-wrapper > a:link {
+        color: #990000;
+        text-decoration: none;
+        width: 100%;
+    }
+    #header-wrapper > #logo-wrapper > a:visited {
+        color: #990000;
+    }
+    #header-wrapper > #navigation-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+        margin-right: 10px;
+        text-align: center;
+    }
+    #header-wrapper > #navigation-wrapper > a:link {
+        text-decoration: none;
+        color: #990000;
+        flex-basis: 150px;
+        font-size: 15pt;
+    }
+    #header-wrapper > #navigation-wrapper > a:visited {
+        color: #990000;
+    }
+    #header-wrapper > #navigation-wrapper > a:hover {
+        background-color: lightgray;
+    }
+    #header-wrapper > #navigation-wrapper > a:active {
+        color: whitesmoke;
+        background-color: #990000;
+    }
+
+    #content {
+        width: 90%;
+        min-height: 425px;
+        margin: auto;
+    }
+    .contentbox {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 5px 20px 5px 20px;
+        margin: 30px 0px 30px 0px;
+        border-left: 2px solid #990000;
+        border-right: 2px solid #990000;
+    }
+    #content > .contentbox > h2 {
+        width: 100%;
+        border-bottom: 2px solid #990000;
+        padding-bottom: 5px;
+    }
+    #content > .contentbox > p > img {
+        float: right;
+        margin: 0px 5px 0px 10px;
+        max-width: 175px;
+        max-height: 125px;
+    }
+    #content > .contentbox > p {
+        width: 100%;
+    }
+
+    #content > .contentbox > .ticketbutton {
+            margin-top: 5px;
+        }
+    #content > .contentbox > .ticketbutton a:link {
+        text-decoration: none;
+        color: #222222;
+        border: 2px solid #990000;
+        border-radius: 10px;
+        width: 20px;
+        padding: 10px 25px 10px 25px;
+    }
+    #content > .contentbox > .ticketbutton a:visited {
+        border: 2px solid #222222;
+        color: #222222;
+    }
+    #content > .contentbox > .ticketbutton a:hover {
+        background-color: lightgray;
+    }
+    #content > .contentbox > .ticketbutton a:active {
+        background-color: #222222;
+        color: whitesmoke;
+    }
+    
+
+    b {
+        color: #990000;
+    }
+    h1 {
+        text-align: center;
+    }
+
+    #footer {
+        border-top: 2px solid #990000;
+        border-bottom: 2px solid #990000;
+        padding: 20px 0px;
+    }
+    #footer > a:link {
+        text-decoration: none;
+        color: #990000;
+    }
+    #footer > a:visited {
+        color: #990000;
+    }
+    #footer > a:hover {
+        color: #ee0000;
+    }
+    #footer > a:active {
+        color: #222222;
+    }
+}
+
+
+#footer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
