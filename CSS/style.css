@@ -57,7 +57,7 @@ html {
     #content {
         width: 60%;
         min-height: 573px;
-        margin: auto;
+        margin: auto;   
     }
     .contentbox {
         display: flex;
@@ -132,7 +132,7 @@ html {
 }
 
 
-@media (max-width: 1080px) {
+@media (max-width: 1080px) {     /* PHONE SETTINGS */
     #header-wrapper {
         display: flex;
         flex-direction: column;
